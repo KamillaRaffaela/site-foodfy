@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Foodfy</title>
+    <link rel="stylesheet" href="style.index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    
+</head>
+
+<body>
+    <header>
+        <div class="links">
+            <a href="index.html">
+                <img class="logo-texto" src="./imagem/logofoodfy.png" alt="logofoodfy">
+            </a>
+            <div>
+                <a class="link-menu" href="sobre.html">Sobre</a>
+                <a class="link-menu" href="receitas.html">Receitas </a>
+            </div>
+        </div>
+    </header>
+    <div class="mycontainer">
+
+        <div class="container">
+            <div class="block-introduction">
+                <div>
+                    <p class="title-introduction">As Melhores Receitas</p>
+                    <p class="text-introduction"> Aprenda a construir os melhores pratos com receitas criadas por
+                        proﬁssionais do mundo inteiro.</p>
+                </div>
+                <img class="logo-imagem" src="./imagem/chef.png" alt="logochef">
+            </div>
+        </div>
+        <div class="selection-favorite">
+            <div class="block-favorites">
+                <h1 class="title-favorite">Mais Acessadas</h1>
+                <div class="favorite-itens">
+                    <div class="iten-favorite" onclick="openModal('./imagem/burger.png', 'Triplo bacon burger', 'por Jorge Relato');">
+                        <img class="img-favorite-card" src="./imagem/burger.png" alt="hamburguer">
+                        <h4 class="name-product">Triplo bacon burger</h4>
+                        <h5 class="creator">por Jorge Relato</h5>
+                    </div>
+                    <div class="iten-favorite" onclick="openModal('./imagem/pizza.png', 'Pizza 4 estações', 'por Fabiana Melo');">
+                        <img class="img-favorite-card" src="./imagem/pizza.png" alt="pizza">
+                        <h4 class="name-product">Pizza 4 estações</h4>
+                        <h5 class="creator">por Fabiana Melo</h5>
+                    </div>
+                    <div class="iten-favorite" onclick="openModal('./imagem/espaguete.png', 'Espaguete ao alho', 'por Júlia Kinot');">
+                        <img class="img-favorite-card" src="./imagem/espaguete.png" alt="espaguete">
+                        <h4 class="name-product">Espaguete ao alho</h4>
+                        <h5 class="creator">por Júlia Kinoto</h5>
+                    </div>
+                    <div class="iten-favorite" onclick="openModal('./imagem/lasanha.png', 'Lasanha mac n’ cheese');">
+                        <img class="img-favorite-card" src="./imagem/lasanha.png" alt="lasanha">
+                        <h4 class="name-product">Lasanha mac n’ cheese</h4>
+                        <h5 class="creator">por Juliano Vieira</h5>
+                    </div>
+                    <div class="iten-favorite" onclick="openModal('./imagem/doce.png', 'Docinhos pão-do-céu', 'por Ricardo Golvea');">
+                        <img class="img-favorite-card" src="./imagem/doce.png" alt="doce">
+                        <h4 class="name-product">Docinhos pão-do-céu</h4>
+                        <h5 class="creator">por Ricardo Golvea</h5>
+                    </div>
+                    <div class="iten-favorite" onclick="openModal('./imagem/asinhas.png', 'Asinha de frango ao barbecue', 'por Vania Steroski');">
+                        <img class="img-favorite-card" src="./imagem/asinhas.png" alt="doce">
+                        <h4 class="name-product">Asinha de frango ao barbecue</h4>
+                        <h5 class="creator">por Vania Steroski</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Todos os direitor reservados. Foodfy Receitas</p>
+    </footer>
+
+    <div class="modal-overlay hidden">
+        <div class="modal"> 
+            <div class="modal-content" id="modal-content">
+                <div class="container-modal">
+                    <i class="close-modal material-icons" onclick="closeModal()">close</i>
+                    <div id="modal-content-favorite" class="iten-favorite">
+                    </div>
+                </div>
+            </div>
+        </div>        
+   </div>
+   <script src="script.js"></script>
+</body>
+
+</html>
